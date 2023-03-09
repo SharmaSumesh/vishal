@@ -3,16 +3,16 @@ const path = require("path");
 const hbs = require("hbs");
 const bodyparser = require("body-parser");
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 
-require("./db/Database");
-const Register = require("./models/Schema");
+require("./src/db/Database");
+const Register = require("./src/models/Schema");
 
 // const index_path = path.join(__dirname, "../public");
 
 // app.use(express.static(index_path));
- const templets_path = path.join(__dirname, "../templets/views");
- const partials_path = path.join(__dirname, "../templets/partials");
+ const templets_path = path.join(__dirname, "./templets/views");
+ const partials_path = path.join(__dirname, "./templets/partials");
 
 
 
